@@ -1,14 +1,18 @@
 #!/bin/bash
-echo &quot;===== SYSTEM STATUS =====&quot;
-echo &quot;CPU Load:&quot;
+
+echo "===== SYSTEM STATUS ====="
+
+echo "CPU Load:"
 uptime
-echo &quot;Memory Usage:&quot;
+
+echo "Memory Usage:"
 free -h
-echo &quot;Disk Usage:&quot;
+
+echo "Disk Usage:"
 df -h
-echo &quot;Network Status:&quot;
+
+echo "Network Status:"
 ip a | grep inet
-echo &quot;Top Processes:&quot;
+
+echo "Top Processes:"
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
-Footer
-© 2026 GitHub
